@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>  
+    <title>RETO4 </title>
+</head>
+
+<body>
+    <h1> RESERVA DE HOTEL</h1>
+    <h2>Categoria </h2>
+    <div id="resultado1"></div>
+    <script type="text/javascript"> 
+    window.onload = autoInicioCategory();
+    </script>
+    <div>
+        <input type="text" id="Cname" placeholder="Nombre">
+        <input type="text" id="Cdescription" placeholder="Descripcion">
+  
+    </div>
+    <button onclick="guardarInformacionCategories()">Guardar Categoria</button>
+   
+
+    <h2>Habitaciones</h2>
+    <div id="resultado2"></div>
+    <script type="text/javascript"> 
+    window.onload = autoInicioRoom();
+    </script>
+    <div>
+        <select id="select-category"></select>
+        <input type="text" id="Rname" placeholder="Nombre">
+        <input type="text" id="Rhotel" placeholder="Hotel">
+        <input type="number" id="Rstars" placeholder="Estrellas">
+        <input type="text" id="Rdescription" placeholder="Descripcion">  
+    
+    </div>
+    <button onclick="guardarInformacionRooms()">Guardar Habitacion</button>
+
+
+
+    <h2>Clientes</h2>
+    <div id="resultado3"></div>
+    <script type="text/javascript"> 
+    window.onload = autoInicioClient();
+    </script>
+    <div>
+        <input type="text" id="CLemail" placeholder="E-mail">
+        <input type="text" id="CLpassword" placeholder="Password">
+        <input type="text" id="CLname" placeholder="Nombre">
+        <input type="number" id="CLage" placeholder="Edad">  
+    
+
+    </div>
+    <button onclick="guardarInformacionClients()">Guardar Cliente</button>
+
+    <h2>Mensajes</h2>
+    <div idMessage="resultado4"></div>
+    <script type="text/javascript"> 
+    window.onload = autoInicioMessage();
+    </script>
+    <div>
+        <input type="text" id="MmessageText" placeholder="Mensaje">
+        
+
+    </div>
+    <button onclick="guardarInformacionMessages()">Guardar Mensaje</button>
+
+
+    <h2>Reservaciones</h2>
+    <div idReservation="resultado5"></div>
+    <script type="text/javascript"> 
+    window.onload = autoInicioReservation();
+    </script>
+    <div>
+        <input type="date" id="REstartDate" placeholder="startDate">
+        <input type="date" id="REdevolutionDate" placeholder="devolutionDate">
+        <input type="text" id="REstatus" placeholder="status">
+
+    </div>
+    <button onclick="guardarInformacionReservation()">Guardar Reservacion</button>
+
+</body>
+
+
+</html>
